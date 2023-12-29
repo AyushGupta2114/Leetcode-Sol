@@ -13,5 +13,6 @@
         num_of_5 = 0
         num_of_10 = 0
     def lemonadeChange(self, bills: List[int]) -> bool:
-class Solution:
+                else:
+                    return False
 [5,5,5,10,20]
