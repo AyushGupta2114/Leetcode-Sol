@@ -9,5 +9,5 @@ class Solution:
                 j+=1
             else:
                 j+=1
-        return j
+        return i
 [
