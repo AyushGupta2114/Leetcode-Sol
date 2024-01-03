@@ -1,17 +1,11 @@
-        for num in nums:
-            if num not in count_nums:
-                count_nums[num] = 0
-
-        count_nums = {}
-        ans = []
 class Solution:
-    def findMatrix(self, nums: List[int]) -> List[List[int]]:
-#             count1[j]=b
-#             print(c)
-#         return []
-#                      if item in b:
-#                         c.remove(item)
-#                 for item in a:
-#                     b.append(i)
-#                 if i not in b:
-[
+    def numberOfBeams(self, bank: List[str]) -> int:
+        ans=0
+        prev=0
+        for row in bank:
+            dev=row.count('1')
+            if dev>0:
+                ans+=dev*prev
+                prev=dev
+        return ans
+["011001","000000","010100","001000"]
