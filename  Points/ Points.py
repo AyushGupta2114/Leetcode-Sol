@@ -1,11 +1,16 @@
-class Solution:
-    def numberOfBeams(self, bank: List[str]) -> int:
-        ans=0
-        prev=0
-        for row in bank:
-            dev=row.count('1')
-            if dev>0:
-                ans+=dev*prev
-                prev=dev
         return ans
-["011001","000000","010100","001000"]
+                ans+=j//3+1
+                ans+=j//3
+            else:
+        for i,j in a .items():
+            if(j%3==0):
+            return -1
+        if(1 in a.values()):
+        print(a)
+        a=Counter(nums)
+        ans=0
+    def minOperations(self, nums: List[int]) -> int:
+class Solution:
+        
+        
+[2,3,3,2,2,4,2,3,4]
