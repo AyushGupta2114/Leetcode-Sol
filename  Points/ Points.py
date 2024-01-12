@@ -1,16 +1,16 @@
+        count1=0
+        count2=0
+        for i in f:
+            if(i in j):
+                count1+=1
+        for i in g:
+            if(i in j):
+        j=['a','e','i','o','u','A','E','I','O','U']
+        g=s[int(k):]
+        print(f)
+    def halvesAreAlike(self, s: str) -> bool:
+        k=len(s)/2
+        print(k)
+        f=s[:int(k)]
 class Solution:
-    def minOperations(self, nums: List[int]) -> int:
-       ·ans=0
-········a=Counter(nums)
-········print(a)
-········if(1·in·a.values()):
-············return·-1
-········for·i,j·in·a·.items():
-············if(j%3==0):
-················ans+=j//3
-············else:
-················ans+=j//3+1
-········return·ans
-        
-        
-[2,3,3,2,2,4,2,3,4]
+"book"
