@@ -1,10 +1,7 @@
 class Solution:
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        d=defaultdict(list)
-        for i in strs:
-            d[''.join(sorted(i))].append(i)
-        return d.values()                    
-
-                    
-        
-["eat","tea","tan","ate","nat","bat"]
+    def sortedSquares(self, nums: List[int]) -> List[int]:
+        for i in range(0,len(nums)):
+            nums[i]=nums[i]**2
+        nums.sort()
+        return nums
+[-4,-1,0,3,10]
