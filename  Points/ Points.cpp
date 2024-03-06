@@ -1,16 +1,16 @@
-#include <iostream>
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
+        while(fast != NULL && fast ->next != NULL)
+        ListNode *slow = head;
+        
+        // till fast and fast-> next not reaches NULL
+        // we will increment fast by 2 step and slow by 1 step
+        // making two pointers fast and slow and assignning them to head
+        ListNode *fast = head;
+            return false;
+        
+        if(head == NULL)
+    
+        // if head is NULL then return false;
+    bool hasCycle(ListNode *head) {
+public:
 class Solution {
-    public:
-    int s=0;
-[10,5,15,3,7,null,18]
+[3,2,0,-4]
