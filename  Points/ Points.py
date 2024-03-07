@@ -1,7 +1,14 @@
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
 class Solution:
-    def sortedSquares(self, nums: List[int]) -> List[int]:
-        for i in range(0,len(nums)):
-            nums[i]=nums[i]**2
-        nums.sort()
-        return nums
-[-4,-1,0,3,10]
+    def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        fast = slow = head
+        while fast and fast.next:
+            fast = fast.next.next
+            slow = slow.next
+        return slow
+        
+[1,2,3,4,5]
