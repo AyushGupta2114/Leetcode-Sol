@@ -10,4 +10,10 @@
         nums1_set = set(nums1)
     def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
 class Solution:
+#                 if arr[mid]==target:
+#                     return True
+#                 elif arr[mid]<target:
+#                     left=mid+1
+#                 else:
+#                     right=mid-1
 [
