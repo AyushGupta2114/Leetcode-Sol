@@ -1,19 +1,5 @@
-#                 mid=left+(right-left)//2
-#             while left<=right:
-#             left,right=0,len(arr)-1
-# Example usage:
-#         def binary_search(arr,target):
-
-        return intersection
-        intersection = list(nums1_set.intersection(nums2_set))
-        nums2_set = set(nums2)
-        nums1_set = set(nums1)
-    def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
-class Solution:
-#                 if arr[mid]==target:
-#                     return True
-#                 elif arr[mid]<target:
-#                     left=mid+1
-#                 else:
-#                     right=mid-1
-[
+#             if binary_search(nums2,num):
+#                 if num not in a and num in nums2:
+#                     a.append(num)
+#         return a
+[1,2,2,1]
