@@ -1,17 +1,16 @@
-        #     i+=1
         #     if(a==b):
         #         x=False
         # print(i)
+        #     i+=1
         #     print(a,b)
-
-        for i in range(1,n+1):
-            a=int((i*(i+1))/2)
-            b=int(((n-i+1)/2)*(n+i))
-            if a==b:
-                return i
-            print(a,b)
+        #     n-=1
         #     b+=i
-        return -1
-            
-
+        # i=1
+        # x=True
+        # while(x):
+        #     a+=n
+    def pivotInteger(self, n: int) -> int:
+        # a=0
+        # b=0
+class Solution:
 8
