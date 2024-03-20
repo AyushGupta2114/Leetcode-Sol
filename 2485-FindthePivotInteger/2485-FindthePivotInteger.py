@@ -1,16 +1,18 @@
-        #     if(a==b):
-        #         x=False
-        # print(i)
-        #     i+=1
-        #     print(a,b)
-        #     n-=1
-        #     b+=i
-        # i=1
-        # x=True
-        # while(x):
-        #     a+=n
-    def pivotInteger(self, n: int) -> int:
-        # a=0
-        # b=0
-class Solution:
+                s2+=j;
+            for(int j=i;j<=n;j++){
+            s1+=i;
+        {
+        for(int i=1;i<=n;i++)
+            }
+            if(s1==s2){
+            pivot=i;
+            break;
+            }
+            s2=0;
+        }
+        if(pivot==0)
+        return -1;
+        else
+        return pivot;
+    }
 8
