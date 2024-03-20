@@ -6,7 +6,6 @@
             }
             if(s1==s2){
             pivot=i;
-            break;
             }
             s2=0;
         }
@@ -15,4 +14,5 @@
         else
         return pivot;
     }
+};
 8
