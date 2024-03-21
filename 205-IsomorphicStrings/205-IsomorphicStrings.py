@@ -1,16 +1,16 @@
         for i in range(0,len(s)):
-            if(s[i] in a):
-                value=a.get(t[i])
+            if(t[i] in a):
         a={}
         #     return False
         #     # print(list(x.values()),list(y.values()))
-        # if(list(x.values())!=list(y.values())):
-                if (a[s[i]]!=t[i]):
-                    return False
-                    
+                if(a[t[i]]!=s[i]):
+                    return False   
             else:
-                a[s[i]]=t[i]
-        print(a)
+                a[t[i]]=s[i]
         return True
 
+                # print(a)
+                if(s[i] in list(a.values())):
+                    return False
+        
 "
