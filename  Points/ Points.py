@@ -1,14 +1,17 @@
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+        for i in range(0,len(s)):
+            if(t[i] in a):
+        a={}
+        #     return False
+        #     # print(list(x.values()),list(y.values()))
+                if(a[t[i]]!=s[i]):
+                    return False   
+            else:
+                a[t[i]]=s[i]
+                if(s[i] in list(a.values())):
+                    return False
+        # x=Counter(s)
+        # y=Counter(t)
+        # if(list(x.values())!=list(y.values())):
+    def isIsomorphic(self, s: str, t: str) -> bool:
 class Solution:
-    def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        fast = slow = head
-        while fast and fast.next:
-            fast = fast.next.next
-            slow = slow.next
-        return slow
-        
-[1,2,3,4,5]
+"
