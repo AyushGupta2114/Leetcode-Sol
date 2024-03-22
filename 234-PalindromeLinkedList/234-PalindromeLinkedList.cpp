@@ -1,16 +1,16 @@
-        printf("%d",a);
-            q=q->next;
         }
-            a++;
-        while(q!=NULL)
+        printf("%d",a);
         {
-        int a=0,i=0;
-        struct ListNode *p=head;
+            a++;
+            q=q->next;
         struct ListNode *q=head;
-        
-    {
-    bool isPalindrome(ListNode* head)
+        struct ListNode *p=head;
+        int a=0,i=0;
+        while(q!=NULL)
 public:
-class Solution {
+    bool isPalindrome(ListNode* head)
+    {
+        
 #include <algorithm>
+class Solution {
 [1,2,2,1]
