@@ -1,17 +1,18 @@
-        for i in range(0,len(s)):
-            if(t[i] in a):
-        a={}
-        #     return False
-        #     # print(list(x.values()),list(y.values()))
-                if(a[t[i]]!=s[i]):
-                    return False   
-            else:
-                a[t[i]]=s[i]
-                if(s[i] in list(a.values())):
-                    return False
-        # x=Counter(s)
-        # y=Counter(t)
-        # if(list(x.values())!=list(y.values())):
-    def isIsomorphic(self, s: str, t: str) -> bool:
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
 class Solution:
-"
+    summ=0
+    def sumOfLeftLeaves(self, root: Optional[TreeNode]) -> int:
+        if(root):
+            if root.left and not root.left.left and not root.left.right:
+                self.summ+=root.left.val
+            self.sumOfLeftLeaves(root.left)
+            self.sumOfLeftLeaves(root.right)
+        return self.summ
+
+        
+[3,9,20,null,null,15,7]
