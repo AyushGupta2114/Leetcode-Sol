@@ -12,4 +12,4 @@ class Solution:
                 return False
         return True
         
-[
+[1,2,2,3]
