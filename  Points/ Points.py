@@ -1,16 +1,13 @@
 class Solution:
-    def subsets(self, nums: List[int]) -> List[List[int]]:
-            result.append(path[:])
-            for i in range(start, len(nums)):
-                path.append(nums[i])
-                backtrack(i + 1, path)
-                path.pop()
-
-        result = []
-        backtrack(0, [])
+    def heightChecker(self, heights: List[int]) -> int:
         
-        def backtrack(start, path):
-        print(result)
-        return result
+        c=0
+        b=sorted(heights)
+        # heights.sort()
+        for i in range(0,len(heights)):
+            if heights[i]!=b[i]:
+                c+=1
+        return c
+        
         
 [
