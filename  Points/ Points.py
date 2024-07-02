@@ -1,13 +1,10 @@
 class Solution:
-    def heightChecker(self, heights: List[int]) -> int:
-        
-        c=0
-        b=sorted(heights)
-        # heights.sort()
-        for i in range(0,len(heights)):
-            if heights[i]!=b[i]:
-                c+=1
-        return c
-        
-        
-[
+    def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        dict1=Counter(nums1) 
+        dict2=Counter(nums2) 
+        commonDict = dict1 & dict2 
+        print(commonDict)
+        commonChars = list(commonDict.elements()) 
+        commonChars = sorted(commonChars) 
+        return commonChars
+[1,2,2,1]
