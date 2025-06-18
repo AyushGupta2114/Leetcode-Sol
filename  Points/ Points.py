@@ -1,10 +1,11 @@
 class Solution:
-    def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
-        dict1=Counter(nums1) 
-        dict2=Counter(nums2) 
-        commonDict = dict1 & dict2 
-        print(commonDict)
-        commonChars = list(commonDict.elements()) 
-        commonChars = sorted(commonChars) 
-        return commonChars
-[1,2,2,1]
+    def divideArray(self, nums: List[int], k: int) -> List[List[int]]:
+        nums.sort()
+        a=[]
+        for i in range(0,len(nums),3):
+            if(nums[i+2]-nums[i]>k) or (nums[i+1]-nums[i]>k):
+                return []
+            else:
+                a.append(nums[i:i+3])
+
+        return a
