@@ -1,0 +1,5 @@
+        Select @Result=Salary
+        from den
+        where RN=@N;
+    RETURN @Result;
+END
