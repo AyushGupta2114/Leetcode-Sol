@@ -5,5 +5,5 @@ SELECT *,row_number() over (partition by email order by id) as rn
 ) 
 from Person
 
-Delete from cte where rn>2;
+Delete from cte where rn>1;
 
