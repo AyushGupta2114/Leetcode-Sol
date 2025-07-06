@@ -1,0 +1,7 @@
+left join Rides r on r.user_id=u.id
+group by u.id,name) a
+from Users u
+Select u.id,name,sum(distance) as dt
+Select name,COALESCE(dt,0) as travelled_distance from (
+/* Write your T-SQL query statement below */
+order by dt desc,name
