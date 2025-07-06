@@ -1,0 +1,13 @@
+Select b.title from (
+union all 
+
+
+where salary_rank=1
+MovieRating mr
+left join movies m on m.movie_id=mr.movie_id
+left join users u on u.user_id=mr.user_id
+group by u.name) a ) b
+Select b.name as results from (
+Select *,RANK() OVER (ORDER BY a.c desc ,name) as salary_rank from (
+Select u.name,count(mr.movie_id) as c from 
+/* Write your T-SQL query statement below */
