@@ -1,9 +1,10 @@
-/* Write your T-SQL query statement below */
-Select requester_id ,Count(accepter_id) as num 
-from RequestAccepted ra
-union all
-from (Select *
-Select accepter_id ,requester_id ,accept_date from RequestAccepted) a 
-Select top 1 requester_id as id , num from (
-group by requester_id) b
-order by num desc
+-- Combining both requester and accepter roles
+FROM (
+    UNION ALL
+    SELECT accepter_id AS requester_id FROM RequestAccepted
+    SELECT requester_id FROM RequestAccepted
+) AS combined
+SELECT TOP 1 requester_id AS id, COUNT(*) AS num
+GROUP BY requester_id
+ORDER BY COUNT(*) DESC;
+
